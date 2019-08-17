@@ -1,6 +1,19 @@
+.clearFix {
+    clear: both;
+}
+
+#titleBox {
+    float: left;
+    margin: 0 auto;
+}
+
 h1 {
-    text-decoration: underline;
+    text-decoration: bold;
     font-size: 40px;
+
+    padding: 30px;
+    background-color: bisque;
+    color: darkolivegreen;
 }
 
 h2 {
