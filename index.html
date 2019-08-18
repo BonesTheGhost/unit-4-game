@@ -22,39 +22,72 @@
 
 <body>
 
-    <div id="titleBox"><h1>Crystal Collector</h1></div>
+    <div id="titleBox">
+        <h1>Crystal Collector</h1>
+    </div>
     <div class="clearFix"></div>
 
 
     <div id="instructionsBox">
-    <p>You will be given a random number at the beginning of the game.</p>
-    <br>
-    <p>There are four crystals below. By clicking on the crystals, you will add a certain number of points to your score.</p>
-    <br>
-    <p>You WIN the game by matching your total score to the random number, you LOSE the game if you go past the random number.</p>
+        <p>You will be given a random number at the beginning of the game.</p>
+        <br>
+        <p>There are four crystals below. By clicking on the crystals, you will add a certain number of points to your
+            score.</p>
+        <br>
+        <p>You WIN the game by matching your total score to the random number, you LOSE the game if you go past the
+            random number.</p>
+
+        <p>The value of each crystal is hidden from you until you click on it!</p>
+        <br>
+        <p>Each time when the game starts, the game will change the value of the crystals.</p>
     </div>
+
+    <br>
     <div class="clearFix"></div>
 
-    <p>This is the body</p>
 
-    <div>
+    <!--The current game score (float left)-->
+    <div id="currentScore">
+        <p id="score">Score: <span id="scoreArea"></span></p>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!--The Alerts, Wins and Losses-->
+    <div id="scoreboard">
+        <p id="alert"><span id="alertArea"></span></p>
+        
+        <p id="wins">Wins: <span id="winsArea"></span></p>
+        
+       <p id="losses">Losses: <span id="lossesArea"></span></p>
+    </div>
+
+    <div id="clearfix"></div>
+
+    <div id="crystals">
         <img id="crystal1" src="assets/images/crystal1.jpeg" alt="A crystal" height="200" width="200">
         <img id="crystal2" src="assets/images/crystal4.jpeg" alt="A crystal" height="200" width="200">
         <img id="crystal3" src="assets/images/crystal5.jpeg" alt="A crystal" height="200" width="200">
         <img id="crystal4" src="assets/images/crystal6.jpeg" alt="A crystal" height="200" width="200">
-    
+
     </div>
 
-    <p id="score">Score: <span id="scoreArea"></span></p>
     <br>
-    <p id="total">Total Score: <span id="totalArea"></span></p>
-    <br>
-    <p id="wins">Wins: <span id="winsArea"></span></p>
-    <br>
-    <p id="losses">Losses: <span id="lossesArea"></span></p>
-    <br>
-    <p id="alert"><span id="alertArea"></span></p>
 
+    <div id="highScore">
+    <p>This is your High Score:</p>
+    </div>
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <!--Bottom Total Score box-->
+    <div id="totalScore">
+    <p id="total"><span id="totalArea"></span></p>
+    </div>
 
 
 

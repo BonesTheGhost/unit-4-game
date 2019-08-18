@@ -124,6 +124,8 @@ function checkForWin() {
         $("#lossesArea").text(playerLosses);
         console.log("*** LOSS RECORDED ***");
 
+        $("#alertArea").text(" [  YOU LOSE!  ] ");
+
         //Re-run the game
         initializeComputerScore();
         initializePlayerScore();
@@ -161,6 +163,8 @@ $(document).ready(function () {
         $("#scoreArea").text(roundScore);
         console.log("roundScore Updated: ", roundScore);
 
+        $("#alertArea").text("[===========]");
+
         checkForWin();
     });
 
@@ -170,6 +174,8 @@ $(document).ready(function () {
         roundScore += crystal2Value;
         $("#scoreArea").text(roundScore);
         console.log("roundScore Updated: ", roundScore);
+
+        $("#alertArea").text("[===========]");
 
         checkForWin();
     });
@@ -181,6 +187,8 @@ $(document).ready(function () {
         $("#scoreArea").text(roundScore);
         console.log("roundScore Updated: ", roundScore);
 
+        $("#alertArea").text("[===========]");
+
         checkForWin();
     });
 
@@ -191,6 +199,8 @@ $(document).ready(function () {
         $("#scoreArea").text(roundScore);
         console.log("roundScore Updated: ", roundScore);
 
+        $("#alertArea").text("[===========]");
+        
         checkForWin();
     });
 
